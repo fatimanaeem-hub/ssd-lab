@@ -9,6 +9,9 @@ pipeline {
         }
 
         stage('Test') {
+            when {
+                expression { return true }
+            }
             steps {
                 echo 'Testing..'
             }
@@ -19,10 +22,5 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-    }
-}
-post {
-    always {
-        echo 'Pipeline completed'
     }
 }
