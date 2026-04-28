@@ -30,3 +30,6 @@ pipeline {
         }
     }
 }
+
+Sarita Sangrez - 23i-2088 - Added Jenkins build step.
+
